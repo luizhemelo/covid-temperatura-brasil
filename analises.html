@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Variações de Temperatura no Brasil e o Covid-19</title>
+<meta name="description" content="Análise de Dados Históricos do Enem">
+<meta name="keywords" content="dados, visualizacao, enem, brasil">
+<link href="./src/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="wrapper"> 
+
+  <div id="header"> 
+
+    <div class="top_banner">
+      <h1>Variações de Temperatura no Brasil e o Covid-19</h1>
+      <p>Trabalho Prático 2 - Banco de Dados Geográficos - 2023/2 - Prof. Clodoveu A. Davis Júnior</p>
+    </div>
+	
+    <div class="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="./src/pages/vis01_page.html">[GEO] Temperatura Média</a></li>
+        <li><a href="./src/pages/vis02_page.html">[GEO] Percentual Novos Casos</a></li>
+        <li><a href="./src/pages/vis03_page.html">Sobre o Autor</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+    <div class="right_section">
+      <div class="common_content">
+        <h2>Introdução e Motivação ao Projeto</h2>
+        <hr>
+        <p></br>
+          No dia 20 de janeiro de 2020 a Organização Mundial da Saúde (OMS) emitiu um alerta que provavelmente alterou
+          a vida e os hábitos de muitas pessoas: a Emergência de Saúde Pública de Importância Internacional (ESPII) do Covid-19.
+          Ele é causado pelo coronavírus SARS-CoV-2, sendo uma doença respiratória contagiosa e seus sintomas podendo variar
+          de leves a graves, podendo incluir febre, tosse e dificuldade respiratória. A sua disseminação ocorre principalmente
+          por gotículas respiratórias ou secreções nasofaríngeas.
+        </br></br>
+          Após esta data o número de novos casos e de óbitos por Covid-19 aumentaram exponencialmente em todo o mundo por
+          vários meses, tornando-se estável apenas após o desenvolvimento de vacinas que reduziriam ou evitariam o contágio
+          da pessoa pelo vírus. Ainda nos dias de hoje o número de novos casos de Covid-19 mantém-se relativamente alto quando
+          comparado a doenças virais conhecidas - tal como a  Influenza, também chamada de gripe comum.
+        </br></br>
+          Desta forma, a busca e o estudo por fatores que potencializam a propagação e o contágio da doença ainda é relevante
+          para o meio médico. Nesta proposta de pesquisa foram desenvolvidas visualizações gráficas que permitem diversos estudos
+          correlacionais entre a temperatura média de regiões do território brasileiro e a ocorrência de novos casos em
+          municípios brasileiros no ano de 2021, no qual foram observados os maiores números de novos casos em todo o Brasil.
+          Foram utilizadas como principais ferramentas o Mapbox (para serviço de localização e geração de mapa) e tendo como
+          linguagem de programação o Python 3.11.
+        </p>
+    </div> 
+    
+    <div class="right_section">
+      <div class="common_content">
+        <h2>Dados</h2>
+        <hr>
+        <p></br>
+          Nesta proposta de pesquisa foram utilizadas três fontes principais de dados. A primeira delas é referente aos dados
+          climáticos sobre a temperatura de diversas regiões espalhadas pelo território brasileiro, sendo elas obtidas por meio de
+          estações climáticas automatizadas do <a target=”_blank” href="https://portal.inmet.gov.br/dadoshistoricos">Instituto Nacional de Meteorologia(INMET)</a>.
+          As estações realizam várias marcações diárias durante todo o ano, permitindo dados confiáveis e diversificados
+          sobre a temperatura, umidade, pressão, dentre outros.
+        </br></br>
+          A segunda delas é referente aos dados do Covid-19, que foram coletados e disponibilizados pelo 
+          <a target=”_blank” href="https://infoms.saude.gov.br/extensions/covid-19_html/covid-19_html.html">Sistema Único de Saúde (SUS)</a>,
+          e contém dados precisos sobre o número de novos casos, número de óbitos, número de casos acumulados, dentre outros.
+          A base contém informações de quase todos os municípios brasileiros, e apresenta dados variados e de grande completude.
+        </br></br>
+          E por fim, a terceira delas é referente aos dados populacionais do Brasil, que são coletados periodicamente e disponibilizados pelo
+          <a target=”_blank” href="https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html?=&t=resultados">Instituto Brasileiro de Geografia e Estatística (IBGE)</a>.
+          Esta base apresenta a população estimada em todos os municípios brasileiros no ano de 2021.  Como base de suporte, foi utilizado também dados
+          para o georreferenciamento dos municípios brasileiros, que foram obtidos no <a target=”_blank” href="https://github.com/tbrugz/geodata-br">GeoData-BR</a>.
+        </br></br>
+          Devido a diversidade das fontes dos dados utilizados, a base de dados geográfica final elaborada para este estudo usa como principal
+          chave o nome do município formatado para um padrão minúsculo e sem quaisquer caracteres especiais, acentos ou espaços duplos ou
+          triplos - esta formação permitiu uma junção mais confiável e eficiente. A base é constituída de duas tabelas, contendo juntas dados
+          da temperatura média, número de novos casos e população estimada em uma determinada região do Brasil.
+      </p>
+    </div> 
+
+    <div class="right_section">
+      <div class="common_content">
+        <h2>Tecnologias Utilizadas</h2>
+        <hr>
+        <p></br>
+          <p style="text-align:center;">
+            <a target=”_blank” href="https://www.python.org/">
+              <img src="./src/images/logo_python.png" alt="Logo" width=100px>
+            </a>
+            <a target=”_blank” href="https://www.mapbox.com/">
+              <img src="./src/images/logo_mapbox.png" alt="Logo" width=200px>
+            </a>
+            <a target=”_blank” href="https://plotly.com/python/maps/">
+              <img src="./src/images/logo_plotly.png" alt="Logo" width=100px>
+            </a>
+            <a target=”_blank” href="https://dev.w3.org/html5/spec-LC/">
+              <img src="./src/images/logo_html.png" alt="Logo" width=50px>
+            </a>
+            <a target=”_blank” href="https://www.w3.org/Style/CSS/specs.en.html">
+              <img src="./src//images/logo_css.png" alt="Logo" width=36px>
+            </a>
+            <a target=”_blank” href="https://getbootstrap.com/docs/4.1/getting-started/introduction/">
+              <img src="./src/images/logo_bootstrap.png" alt="Logo" width=55px>
+            </a>
+          </p>
+      </br></br></br></br></br></br></br></br>
+      </p>
+    </div> 
+    	
+</body></html>
