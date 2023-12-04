@@ -11,5 +11,7 @@ Para execução dos notebooks, favor instalar os componentes por meio do _pip_:
 > $ pip install -r requirements.txt
 
 Ferramentas utilizadas
-> Construção do mapa: [Plotly](https://plotly.com/python/maps/) </br>Serviço de localização: [Mapbox](https://www.mapbox.com/) </br>Fonte dos dados de Covid-19: [SUS](https://infoms.saude.gov.br/extensions/covid-19_html/covid-19_html.html) </br>Fonte dos dados populacionais: [IBGE](https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html?=&t=resultados) </br>Fonte dos dados meteorológicos: [INMET](https://portal.inmet.gov.br/dadoshistoricos)
+> Construção do mapa: [Plotly](https://plotly.com/python/maps/) </br>Serviço de localização: [Mapbox](https://www.mapbox.com/)
+
+> Fonte dos dados de Covid-19: [SUS](https://infoms.saude.gov.br/extensions/covid-19_html/covid-19_html.html) </br>Fonte dos dados populacionais: [IBGE](https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html?=&t=resultados) </br>Fonte dos dados meteorológicos: [INMET](https://portal.inmet.gov.br/dadoshistoricos) </br>Fonte dos dados de georreferenciamento: [GitHub](https://github.com/tbrugz/geodata-br)
 
