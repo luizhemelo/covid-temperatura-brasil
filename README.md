@@ -7,7 +7,7 @@ Estudo desenvolvido para a disciplina de Banco de Dados Geográficos, semestre 2
 Execução da webpage (não exige pré-configuração da máquina):
 > Executar "analises.html"
 
-Para execução dos notebook, favor instalar os componentes:
+Para execução dos notebooks, favor instalar os componentes por meio do _pip_:
 > $ pip install -r requirements.txt
 
 Ferramentas utilizadas
