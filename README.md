@@ -1,6 +1,6 @@
 # Variações de Temperatura no Brasil e o Covid-19
 
-Explorando a Conexão entre a Incidência de Novos Casos de Covid-19 e Variações de Temperatura no Brasil, em 2021.
+##### Explorando a Conexão entre a Incidência de Novos Casos de Covid-19 e Variações de Temperatura no Brasil, em 2021.
 
 Estudo desenvolvido para a disciplina de Banco de Dados Geográficos, semestre 2023/2, **Trabalho Prático 02 - Dados Meteorológicos Espacializados**, tendo como objetivo a exploração da conexão entre a incidência de novos casos de Covid-19 es variações de temperatura no Brasil, em 2021.
 
